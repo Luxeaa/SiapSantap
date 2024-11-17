@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="SiapSantap Catering Samarinda" content="Layanan catering premium SiapSantap dengan menu berkualitas dan layanan profesional. Pesan sekarang untuk acara spesial Anda. Lokasi Samarinda">
+    <meta name="Catering, Rice Box, Nasi Kotak, Snack Box, Kue Tampah" content="kata kunci, relevan, terkait">
+    <meta name="SiapSantap" content="SiapSantap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiapSantap - Catering Berkualitas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2E7D32;
+            --primary-red: #C62828;
+            --primary-gold: #FFD700;
+        }
+
+        .bg-gradient-hero {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-red));
+        }
+
+        .text-gold {
+            color: var(--primary-gold);
+        }
+
+        .text-red {
+            color: var(--primary-red);
+        }
+
+        .btn-custom {
+            background-color: var(--primary-gold);
+            border: none;
+            color: #C62828;
+            transition: all 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .feature-card {
+            border: 2px solid var(--primary-green);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
+
+        .menu-item {
+            border-left: 4px solid var(--primary-green);
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            border-left: 4px solid var(--primary-gold);
+            background-color: rgba(46, 125, 50, 0.1);
+        }
+
+        .scroll-indicator {
+            width: 30px;
+            height: 50px;
+            border: 2px solid var(--primary-gold);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .scroll-indicator::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary-gold);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 8px;
+            animation: scrollDown 2s infinite;
+        }
+
+        @keyframes scrollDown {
+            0% { top: 8px; opacity: 1; }
+            100% { top: 32px; opacity: 0; }
+        }
+        .section-divider {
+        border: none;
+        height: 2px;
+        background: linear-gradient(to right, var(--primary-green), var(--primary-gold), var(--primary-red));
+        margin: 40px 0;
+        opacity: 0.7;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-green);">
+        <div class="container">
+            <img src="SiapSantap Logo One (2).png" alt="Logo" height="50">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="bg-gradient-hero min-vh-100 d-flex align-items-center">
+        <div class="container text-white">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Sajian Berkualitas untuk Setiap Momen Sepesial Anda</h1>
+                    <p class="lead mb-4">Nikmati pengalaman catering premium dengan cita rasa autentik dan pelayanan profesional</p>
+                    <a href="https://wa.me/6282148498018?text=Halo%20saya%20ingin%20memesan%20catering" target="_blank"><button class="btn btn-custom btn-lg">Pesan Sekarang</button></a>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="floating">
+                        <div class="display-1 text-gold">
+                            <i class="fas">🍽️🍰🍱</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <div class="scroll-indicator mx-auto"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="layanan" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Mengapa Memilih Kami?</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card p-4 rounded-3 h-100">
+                        <h3 class="h5 mb-3 text-gold">Kualitas Premium</h3>
+                        <p class="mb-0">Bahan-bahan segar & berkualitas tinggi</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card p-4 rounded-3 h-100">
+                        <h3 class="h5 mb-3 text-gold">Variasi Menu</h3>
+                        <p class="mb-0">Pilihan menu yang dapat disesuaikan dengan kebutuhan Anda</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card p-4 rounded-3 h-100">
+                        <h3 class="h5 mb-3 text-gold">Pelayanan Prima</h3>
+                        <p class="mb-0">Siap melayani dengan sepenuh hati</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+    
+    <!-- Layanan Section -->
+    <section id="layanan" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Layanan Kami</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card layanan-card text-center">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <i style="color:#C62828;" class="fas fa-building fa-3x mb-3 text-siapsantap"></i>
+                            <h4>Katering Kantor</h4>
+                            <p>Melayani kebutuhan event kantor dan rapat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card layanan-card text-center">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <i style="color:#C62828;" class="fas fa-users fa-3x mb-3 text-siapsantap"></i>
+                            <h4>Katering Acara</h4>
+                            <p>Berbagai jenis acara dengan menu fleksibel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="section-divider">
+    
+    <!-- Menu Showcase -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Menu Unggulan</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-item p-4 bg-white rounded-3">
+                        <h5>Snack Box</h5>
+                        <p>berbagai macam camilan, seperti kue basah, kue kering, roti, dan snack tradisional.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-item p-4 bg-white rounded-3">
+                        <h3 class="h5 mb-3">Rice Box</h3>
+                        <p class="mb-0">hidangan nasi yang disajikan dalam kotak atau kemasan, dilengkapi dengan lauk-pauk seperti daging dan sayur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="menu-item p-4 bg-white rounded-3">
+                        <h3 class="h5 mb-3">Kue Tampah</h3>
+                        <p class="mb-0">hidangan yang terdiri dari berbagai macam kue tradisional yang disusun dalam wadah tampah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Testimonials Section -->
+    <section id="testimoni" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Apa Kata Pelanggan Kami?</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white p-4 rounded-3 shadow-sm">
+                        <p class="mb-4">"Layanan cateringnya luar biasa! Makanan yang lezat dan pelayanannya sangat ramah."</p>
+                        <h5 class="text-red">- Anna</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white p-4 rounded-3 shadow-sm">
+                        <p class="mb-4">"Pilihan menunya sangat bervariasi bisa sesuai permintaan kita."</p>
+                        <h5 class="text-red">- Budi</h5>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white p-4 rounded-3 shadow-sm">
+                        <p class="mb-4">"SiapSantap solusi terbaik saya ketika ada acara. Sangat Rekomen!"</p>
+                        <h5 class="text-red">- Citra</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+<footer class="py-5" style="background-color: #004d40; color: #fff;" id="footer">
+    <div class="container">
+        <hr class="border-light mb-5">
+        <div class="row">
+            <!-- Tentang SiapSantap -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-warning mb-3">Tentang SiapSantap</h5>
+                <p class="mb-0">
+                    Menyajikan hidangan berkualitas untuk berbagai acara dengan cita rasa autentik dan pelayanan profesional.
+                </p>
+            </div>
+            <!-- Kontak Kami -->
+            <div class="col-lg-4 col-md-6 mb-4 text-center">
+                <h5 class="text-warning mb-3">Kontak Kami</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-phone-alt me-2"></i><a href="tel:+62 821-4849-8018" class="text-white text-decoration-none">+62 821-4849-8018</a></li>
+                    <li class="mb-2"><i class="fas fa-envelope me-2"></i><a href="mailto:siapsantapcatering@gmail.com" class="text-white text-decoration-none">siapsantapcatering@gmail.com</a></li>
+                    <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Samarinda, Indonesia</li>
+                </ul>
+            </div>
+            <!-- Ikuti Kami -->
+            <div class="col-lg-4 col-md-12 mb-4 text-center">
+                <h5 class="text-warning mb-3">Ikuti Kami</h5>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.instagram.com/siapsantap.smd/" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/siapsantap.smd/">siapsantap.smd</a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light mt-5">
+        <!-- Footer Bottom -->
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 <a href="index.html">SiapSantap</a>. Semua hak dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar color change on scroll
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').style.backgroundColor = '#1b5e20';
+            } else {
+                document.querySelector('.navbar').style.backgroundColor = 'var(--primary-green)';
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+        duration: 1000, // Durasi animasi dalam milidetik
+        easing: 'ease-in-out', // Jenis easing
+        once: true // Animasi hanya terjadi sekali saat scroll
+        });
+    });
+
+        
+    </script>
+</body>
+</html>
